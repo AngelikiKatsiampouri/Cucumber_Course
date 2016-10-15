@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4496923106,
+              "duration": 6982852250,
               "status": "passed"
             },
             "name": "Customer navigates to main page",
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 1682219042,
+              "duration": 1116542304,
               "status": "passed"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
@@ -47,6 +47,24 @@
                 }
               ],
               "location": "SearchFilterSteps.customer_searchers_for(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 659485986,
+              "status": "passed"
+            },
+            "name": "Customer is on the \"Gaming laptop\" page",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gaming laptop",
+                  "offset": 20
+                }
+              ],
+              "location": "GamingPageSteps.customer_is_on_the_page(String)"
             }
           }
         ],
