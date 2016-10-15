@@ -31,7 +31,7 @@ formatter.step({
   "line": 6
 });
 formatter.step({
-  "name": "Customer is on the \"Gaming laptop\" page",
+  "name": "the website displays gaming laptops",
   "keyword": "Then ",
   "line": 7
 });
@@ -39,7 +39,7 @@ formatter.match({
   "location": "MainPageSteps.customer_navigates_to_main_page()"
 });
 formatter.result({
-  "duration": 6982852250,
+  "duration": 4465704909,
   "status": "passed"
 });
 formatter.match({
@@ -52,20 +52,14 @@ formatter.match({
   "location": "SearchFilterSteps.customer_searchers_for(String)"
 });
 formatter.result({
-  "duration": 1116542304,
+  "duration": 1337277001,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Gaming laptop",
-      "offset": 20
-    }
-  ],
-  "location": "GamingPageSteps.customer_is_on_the_page(String)"
+  "location": "GamingPageSteps.the_website_displays_gaming_laptops()"
 });
 formatter.result({
-  "duration": 659485986,
+  "duration": 510568631,
   "status": "passed"
 });
 });

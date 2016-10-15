@@ -10,15 +10,16 @@ import cucumber.api.java.en.Then;
 import util.WebDriverSetUp;
 
 public class GamingPageSteps {
-	
-	@Then("^Customer is on the \"([^\"]*)\" page$")
-	public void customer_is_on_the_page(String arg1) throws Throwable {
-	 List<WebElement> GamingLaptopsWebElements = WebDriverSetUp.myDriver.findElements(By.xpath("//a[@class='product-title'][contains(text(),'Gaming Laptop')]"));
-	 assertTrue("Er zijn geen gaming laptops gevonden!",!GamingLaptopsWebElements.isEmpty());
-	 
-	 for (WebElement webElement : GamingLaptopsWebElements) {
-		
-		System.out.println(webElement.getText());
-	}
+
+	@Then("^the website displays gaming laptops$")
+	public void the_website_displays_gaming_laptops() throws Throwable {
+		List<WebElement> GamingLaptopsWebElements = WebDriverSetUp.myDriver
+				.findElements(By.xpath("//a[@class='product-title'][contains(text(),'Gaming Laptop')]"));
+		assertTrue("Er zijn geen gaming laptops gevonden!", !GamingLaptopsWebElements.isEmpty());
+
+		for (WebElement webElement : GamingLaptopsWebElements) {
+
+			System.out.println(webElement.getText());
+		}
 	}
 }
