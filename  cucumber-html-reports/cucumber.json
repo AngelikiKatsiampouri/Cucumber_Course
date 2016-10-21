@@ -7,11 +7,33 @@
     "line": 1,
     "elements": [
       {
+        "after": [
+          {
+            "result": {
+              "duration": 947293771,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupEnvironment.tearDown(Scenario)"
+            }
+          }
+        ],
         "id": "as-customer-i-want-to-use-bol.com-to-select-my-new-gaming-laptop.;as-customer-i-want-to-have-a-overview-of-available-gaming-laptops",
         "tags": [
           {
             "name": "@GameLaptop",
             "line": 3
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 4188172257,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupEnvironment.setup(Scenario)"
+            }
           }
         ],
         "description": "",
@@ -21,9 +43,8 @@
         "steps": [
           {
             "result": {
-              "duration": 112676664,
-              "status": "failed",
-              "error_message": "java.lang.NullPointerException\r\n\tat util.WebDriverSetUp.openUrl(WebDriverSetUp.java:26)\r\n\tat steps.MainPageSteps.customer_navigates_to_main_page(MainPageSteps.java:15)\r\n\tat ✽.Given Customer navigates to main page(GameLaptops.feature:5)\r\n"
+              "duration": 1904684355,
+              "status": "passed"
             },
             "name": "Customer navigates to main page",
             "keyword": "Given ",
@@ -34,7 +55,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1062758706,
+              "status": "passed"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
             "keyword": "When ",
@@ -51,7 +73,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 490741680,
+              "status": "passed"
             },
             "name": "the website displays gaming laptops",
             "keyword": "Then ",
@@ -62,7 +85,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 103961260,
+              "status": "passed"
             },
             "name": "filter options are present",
             "keyword": "Then ",

@@ -6,6 +6,10 @@ formatter.feature({
   "keyword": "Feature",
   "line": 1
 });
+formatter.before({
+  "duration": 4188172257,
+  "status": "passed"
+});
 formatter.scenario({
   "id": "as-customer-i-want-to-use-bol.com-to-select-my-new-gaming-laptop.;as-customer-i-want-to-have-a-overview-of-available-gaming-laptops",
   "tags": [
@@ -62,9 +66,8 @@ formatter.match({
   "location": "MainPageSteps.customer_navigates_to_main_page()"
 });
 formatter.result({
-  "duration": 112676664,
-  "status": "failed",
-  "error_message": "java.lang.NullPointerException\r\n\tat util.WebDriverSetUp.openUrl(WebDriverSetUp.java:26)\r\n\tat steps.MainPageSteps.customer_navigates_to_main_page(MainPageSteps.java:15)\r\n\tat ✽.Given Customer navigates to main page(GameLaptops.feature:5)\r\n"
+  "duration": 1904684355,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -76,18 +79,25 @@ formatter.match({
   "location": "SearchFilterSteps.customer_searchers_for(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1062758706,
+  "status": "passed"
 });
 formatter.match({
   "location": "GamingPageSteps.the_website_displays_gaming_laptops()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 490741680,
+  "status": "passed"
 });
 formatter.match({
   "location": "GamingPageSteps.filter_options_are_present(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 103961260,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 947293771,
+  "status": "passed"
 });
 });
