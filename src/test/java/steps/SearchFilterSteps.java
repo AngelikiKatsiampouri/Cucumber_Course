@@ -1,5 +1,7 @@
 package steps;
 
+import locators.Locators;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,10 +16,11 @@ public class SearchFilterSteps {
 
 @When("^Customer searchers for \"([^\"]*)\"$")
 public void customer_searchers_for(String searchKeyWords) throws Throwable {
-  WebElement searchInputElement=  WebDriverSetUp.myDriver.findElement(By.xpath("//input[@class='search-input small_details']"));
+  WebElement searchInputElement=  WebDriverSetUp.myDriver.findElement(Locators.findInputByAttribute("class","search-input small_details"));
   searchInputElement.sendKeys(searchKeyWords);
-  WebElement searchButtonElement=  WebDriverSetUp.myDriver.findElement(By.xpath("//input[@class='search-btn  large--is-visible  small_details  tst_headerSearchButton']"));
+  WebElement searchButtonElement=  WebDriverSetUp.myDriver.findElement(Locators.findInputByAttribute("class","search-btn"));
   searchButtonElement.click();
+  
 }
 
 }

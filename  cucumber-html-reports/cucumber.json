@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4465704909,
+              "duration": 7535575720,
               "status": "passed"
             },
             "name": "Customer navigates to main page",
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 1337277001,
+              "duration": 1147957423,
               "status": "passed"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 510568631,
+              "duration": 501205501,
               "status": "passed"
             },
             "name": "the website displays gaming laptops",
@@ -60,6 +60,37 @@
             "match": {
               "location": "GamingPageSteps.the_website_displays_gaming_laptops()"
             }
+          },
+          {
+            "result": {
+              "duration": 2192549664,
+              "status": "failed",
+              "error_message": "java.lang.AssertionError: Filter optie staat niet op het scherm\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat steps.GamingPageSteps.filter_options_are_present(GamingPageSteps.java:38)\r\n\tat ✽.Then filter options are present(GameLaptops.feature:8)\r\n"
+            },
+            "name": "filter options are present",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "GamingPageSteps.filter_options_are_present(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "filter1",
+                  "filter2",
+                  "filter3"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Categorieën",
+                  "Schermgrootte",
+                  "Merk"
+                ],
+                "line": 10
+              }
+            ]
           }
         ],
         "type": "scenario"
