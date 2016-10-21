@@ -62,7 +62,7 @@ formatter.match({
   "location": "MainPageSteps.customer_navigates_to_main_page()"
 });
 formatter.result({
-  "duration": 7535575720,
+  "duration": 4823760826,
   "status": "passed"
 });
 formatter.match({
@@ -75,22 +75,21 @@ formatter.match({
   "location": "SearchFilterSteps.customer_searchers_for(String)"
 });
 formatter.result({
-  "duration": 1147957423,
+  "duration": 1220494376,
   "status": "passed"
 });
 formatter.match({
   "location": "GamingPageSteps.the_website_displays_gaming_laptops()"
 });
 formatter.result({
-  "duration": 501205501,
+  "duration": 726059221,
   "status": "passed"
 });
 formatter.match({
   "location": "GamingPageSteps.filter_options_are_present(DataTable)"
 });
 formatter.result({
-  "duration": 2192549664,
-  "status": "failed",
-  "error_message": "java.lang.AssertionError: Filter optie staat niet op het scherm\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat steps.GamingPageSteps.filter_options_are_present(GamingPageSteps.java:38)\r\n\tat ✽.Then filter options are present(GameLaptops.feature:8)\r\n"
+  "duration": 107389948,
+  "status": "passed"
 });
 });

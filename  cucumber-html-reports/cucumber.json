@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7535575720,
+              "duration": 4823760826,
               "status": "passed"
             },
             "name": "Customer navigates to main page",
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 1147957423,
+              "duration": 1220494376,
               "status": "passed"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 501205501,
+              "duration": 726059221,
               "status": "passed"
             },
             "name": "the website displays gaming laptops",
@@ -63,9 +63,8 @@
           },
           {
             "result": {
-              "duration": 2192549664,
-              "status": "failed",
-              "error_message": "java.lang.AssertionError: Filter optie staat niet op het scherm\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat steps.GamingPageSteps.filter_options_are_present(GamingPageSteps.java:38)\r\n\tat ✽.Then filter options are present(GameLaptops.feature:8)\r\n"
+              "duration": 107389948,
+              "status": "passed"
             },
             "name": "filter options are present",
             "keyword": "Then ",
