@@ -35,7 +35,7 @@ public class GamingPageSteps {
 			   WebElement filterElement = WebDriverSetUp.myDriver
 						.findElement(By.xpath("//div[contains(@class,'facet-control__header')]/h4[contains(text(),'"+row.getCells().get(j)+"')]"));
 			   System.out.println(row.getCells().get(j));
-			   assertTrue("Filter optie staat niet op het scherm", filterElement.isDisplayed()); 
+			   assertTrue("Filter optie "+row.getCells().get(j)+" staat niet op het scherm", filterElement.isDisplayed()); 
 		   }
 		 
 	   }

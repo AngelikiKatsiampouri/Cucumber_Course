@@ -42,9 +42,9 @@ formatter.step({
   "rows": [
     {
       "cells": [
-        "filter1",
-        "filter2",
-        "filter3"
+        "filter_Categorieën",
+        "filter_Schermgrootte",
+        "filter_Merk"
       ],
       "line": 9
     },
@@ -62,8 +62,9 @@ formatter.match({
   "location": "MainPageSteps.customer_navigates_to_main_page()"
 });
 formatter.result({
-  "duration": 4823760826,
-  "status": "passed"
+  "duration": 112676664,
+  "status": "failed",
+  "error_message": "java.lang.NullPointerException\r\n\tat util.WebDriverSetUp.openUrl(WebDriverSetUp.java:26)\r\n\tat steps.MainPageSteps.customer_navigates_to_main_page(MainPageSteps.java:15)\r\n\tat ✽.Given Customer navigates to main page(GameLaptops.feature:5)\r\n"
 });
 formatter.match({
   "arguments": [
@@ -75,21 +76,18 @@ formatter.match({
   "location": "SearchFilterSteps.customer_searchers_for(String)"
 });
 formatter.result({
-  "duration": 1220494376,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "GamingPageSteps.the_website_displays_gaming_laptops()"
 });
 formatter.result({
-  "duration": 726059221,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "GamingPageSteps.filter_options_are_present(DataTable)"
 });
 formatter.result({
-  "duration": 107389948,
-  "status": "passed"
+  "status": "skipped"
 });
 });

@@ -21,8 +21,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4823760826,
-              "status": "passed"
+              "duration": 112676664,
+              "status": "failed",
+              "error_message": "java.lang.NullPointerException\r\n\tat util.WebDriverSetUp.openUrl(WebDriverSetUp.java:26)\r\n\tat steps.MainPageSteps.customer_navigates_to_main_page(MainPageSteps.java:15)\r\n\tat ✽.Given Customer navigates to main page(GameLaptops.feature:5)\r\n"
             },
             "name": "Customer navigates to main page",
             "keyword": "Given ",
@@ -33,8 +34,7 @@
           },
           {
             "result": {
-              "duration": 1220494376,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
             "keyword": "When ",
@@ -51,8 +51,7 @@
           },
           {
             "result": {
-              "duration": 726059221,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "the website displays gaming laptops",
             "keyword": "Then ",
@@ -63,8 +62,7 @@
           },
           {
             "result": {
-              "duration": 107389948,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "filter options are present",
             "keyword": "Then ",
@@ -75,9 +73,9 @@
             "rows": [
               {
                 "cells": [
-                  "filter1",
-                  "filter2",
-                  "filter3"
+                  "filter_Categorieën",
+                  "filter_Schermgrootte",
+                  "filter_Merk"
                 ],
                 "line": 9
               },
