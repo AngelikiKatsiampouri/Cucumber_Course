@@ -14,4 +14,10 @@ public class FilterLocators {
 		return By.xpath("//div[contains(@class , '[ fluid-grid__item large--one-fifth ] navigation-container')]");
 
 	}
+	
+	
+	public static By findFilterHeader(String header){
+		return By.xpath("//div[contains(@class,'facet-control__header')]/h4[contains(text(),'"
+				+header + "')]");
+	}
 }

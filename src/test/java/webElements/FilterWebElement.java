@@ -2,18 +2,23 @@ package webElements;
 
 import org.openqa.selenium.WebElement;
 
-import locators.FilterLocators;
-import steps.SetupEnvironment;
 
 public class FilterWebElement {
-
-//	public class FilterContainer {
-//
-//		WebElement FilterContainer = SetupEnvironment.myDriver
-//				.findElement(FilterLocators.findFilterContainer());
-//		
-//		return FilterContainer
-//	}
+	
+	 private WebElement myWebElement;
+	
+	public FilterWebElement(WebElement element){
+		this.myWebElement=element;
+	}
+	
+	public void filterOnPrice(){
+		
+	}
+	
+	
+	public boolean isDisplayed(){
+		return false;
+	}
 
 
 }

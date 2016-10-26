@@ -4,9 +4,12 @@ import gherkin.formatter.model.DataTableRow;
 
 import java.util.List;
 
+import locators.FilterLocators;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import webElements.FilterWebElement;
 import static org.junit.Assert.assertTrue;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
@@ -40,11 +43,11 @@ public class GamingPageSteps {
 			DataTableRow row = tableRows.get(i);
 			for (int j = 0; j < row.getCells().size(); j++) {
 				WebElement filterElement = SetupEnvironment.myDriver
-						.findElement(By.xpath("//div[contains(@class,'facet-control__header')]/h4[contains(text(),'"
-								+ row.getCells().get(j) + "')]"));
+						.findElement(FilterLocators.findFilterHeader(row.getCells().get(j)));
+				FilterWebElement filterel=(FilterWebElement)filterElement;
 				System.out.println(row.getCells().get(j));
 				assertTrue("Filter optie " + row.getCells().get(j) + " staat niet op het scherm",
-						filterElement.isDisplayed());
+						filterel.isDisplayed());
 			}
 
 		}
