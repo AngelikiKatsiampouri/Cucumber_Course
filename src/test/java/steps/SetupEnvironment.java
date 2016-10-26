@@ -13,47 +13,43 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-
 public class SetupEnvironment {
-	
-	 public static WebDriver myDriver;
 
- public static String CHROME_PATH="/src/test/resources/drivers/chromedriver_win32.exe";
-	 
-	 public static String CHROME_PROPERTY="webdriver.chrome.driver";
+	public static WebDriver myDriver;
 
-	
+	public static String CHROME_PATH = "/src/test/resources/drivers/chromedriver_win32.exe";
+
+	public static String CHROME_PROPERTY = "webdriver.chrome.driver";
+
 	@Before
-	public void setup(Scenario scenario){
-		 System.setProperty(CHROME_PROPERTY, System.getProperty("user.dir")+CHROME_PATH);
-		 myDriver=new ChromeDriver();
-		 myDriver.manage().window().maximize();
-		 System.out.println("Starting Scenario: "+scenario.getName());
-	       
-	   }
-	
-	 @After 
-	 public void tearDown(Scenario scenario) throws IOException {
-		 System.out.println("Completed Scenario: "+scenario.getName());
-	        try {
-	            if (scenario.isFailed()) {
-	            	System.out.println("Scenario: "+scenario.getName()+" failed!");	 
-	                    takeScreenShotAndAttachToScenario(scenario);
-	                
-	            }
-	        } finally {
-	            if ( myDriver != null) {
-	            	myDriver.quit();
-	            }
-	        }
-	      
-	
-	    }
-	 
+	public void setup(Scenario scenario) {
+		System.setProperty(CHROME_PROPERTY, System.getProperty("user.dir") + CHROME_PATH);
+		myDriver = new ChromeDriver();
+		myDriver.manage().window().maximize();
+		System.out.println("Starting Scenario: " + scenario.getName());
 
-	    public void takeScreenShotAndAttachToScenario(Scenario scenario) throws IOException {
-	        File source = ((TakesScreenshot) SetupEnvironment.myDriver).getScreenshotAs(OutputType.FILE);
-	        FileUtils.copyFile(source, new File("target/screenshot/screenshot.png"));
-	    } 
-	
+	}
+
+	@After
+	public void tearDown(Scenario scenario) throws IOException {
+		System.out.println("Completed Scenario: " + scenario.getName());
+		try {
+			if (scenario.isFailed()) {
+				System.out.println("Scenario: " + scenario.getName() + " failed!");
+				takeScreenShotAndAttachToScenario(scenario);
+
+			}
+		} finally {
+			if (myDriver != null) {
+				myDriver.quit();
+			}
+		}
+
+	}
+
+	public void takeScreenShotAndAttachToScenario(Scenario scenario) throws IOException {
+		File source = ((TakesScreenshot) SetupEnvironment.myDriver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(source, new File("target/screenshot/screenshot.png"));
+	}
+
 }
