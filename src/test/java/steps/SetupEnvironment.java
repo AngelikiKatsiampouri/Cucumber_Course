@@ -1,5 +1,11 @@
 package steps;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -27,11 +33,13 @@ public class SetupEnvironment {
 	   }
 	
 	 @After 
-	 public void tearDown(Scenario scenario) {
+	 public void tearDown(Scenario scenario) throws IOException {
 		 System.out.println("Completed Scenario: "+scenario.getName());
 	        try {
 	            if (scenario.isFailed()) {
-	            	System.out.println("Scenario: "+scenario.getName()+" failed!");	             
+	            	System.out.println("Scenario: "+scenario.getName()+" failed!");	 
+	                    takeScreenShotAndAttachToScenario(scenario);
+	                
 	            }
 	        } finally {
 	            if ( myDriver != null) {
@@ -41,5 +49,11 @@ public class SetupEnvironment {
 	      
 	
 	    }
+	 
+
+	    public void takeScreenShotAndAttachToScenario(Scenario scenario) throws IOException {
+	        File source = ((TakesScreenshot) SetupEnvironment.myDriver).getScreenshotAs(OutputType.FILE);
+	        FileUtils.copyFile(source, new File("target/screenshot/screenshot.png"));
+	    } 
 	
 }
