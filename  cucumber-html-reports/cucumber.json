@@ -2,7 +2,7 @@
   {
     "id": "as-customer-i-want-to-use-bol.com-to-select-my-new-gaming-laptop.",
     "description": "",
-    "name": "As customer i want to use bol.com to select my new gaming laptop.",
+    "name": "As customer I want to use bol.com to select my new gaming laptop.",
     "keyword": "Feature",
     "line": 1,
     "elements": [
@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 947293771,
+              "duration": 950295951,
               "status": "passed"
             },
             "match": {
@@ -18,7 +18,7 @@
             }
           }
         ],
-        "id": "as-customer-i-want-to-use-bol.com-to-select-my-new-gaming-laptop.;as-customer-i-want-to-have-a-overview-of-available-gaming-laptops",
+        "id": "as-customer-i-want-to-use-bol.com-to-select-my-new-gaming-laptop.;as-customer-i-want-to-have-a-view-of-gaming-laptops-i-can-buy",
         "tags": [
           {
             "name": "@GameLaptop",
@@ -28,7 +28,7 @@
         "before": [
           {
             "result": {
-              "duration": 4188172257,
+              "duration": 4404844989,
               "status": "passed"
             },
             "match": {
@@ -37,13 +37,13 @@
           }
         ],
         "description": "",
-        "name": "As customer i want to have a overview of available gaming laptops",
+        "name": "As customer I want to have a view of gaming laptops I can buy",
         "keyword": "Scenario",
         "line": 4,
         "steps": [
           {
             "result": {
-              "duration": 1904684355,
+              "duration": 1720604645,
               "status": "passed"
             },
             "name": "Customer navigates to main page",
@@ -55,8 +55,9 @@
           },
           {
             "result": {
-              "duration": 1062758706,
-              "status": "passed"
+              "duration": 818560700,
+              "status": "failed",
+              "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat steps.SearchFilterSteps.customer_searchers_for(SearchFilterSteps.java:21)\r\n\tat ✽.When Customer searchers for \"Gaming laptops\"(GameLaptops.feature:6)\r\n"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
             "keyword": "When ",
@@ -73,8 +74,7 @@
           },
           {
             "result": {
-              "duration": 490741680,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "the website displays gaming laptops",
             "keyword": "Then ",
@@ -82,15 +82,83 @@
             "match": {
               "location": "GamingPageSteps.the_website_displays_gaming_laptops()"
             }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 840191504,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupEnvironment.tearDown(Scenario)"
+            }
+          }
+        ],
+        "id": "as-customer-i-want-to-use-bol.com-to-select-my-new-gaming-laptop.;as-customer-i-want-to-filter-on-gaming-laptops",
+        "tags": [
+          {
+            "name": "@GameLaptop",
+            "line": 10
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 3504050695,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SetupEnvironment.setup(Scenario)"
+            }
+          }
+        ],
+        "description": "",
+        "name": "As customer I want to filter on gaming laptops",
+        "keyword": "Scenario",
+        "line": 11,
+        "steps": [
+          {
+            "result": {
+              "duration": 1444189323,
+              "status": "passed"
+            },
+            "name": "Customer navigates to main page",
+            "keyword": "Given ",
+            "line": 12,
+            "match": {
+              "location": "MainPageSteps.customer_navigates_to_main_page()"
+            }
           },
           {
             "result": {
-              "duration": 103961260,
-              "status": "passed"
+              "duration": 904499733,
+              "status": "failed",
+              "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat steps.SearchFilterSteps.customer_searchers_for(SearchFilterSteps.java:21)\r\n\tat ✽.When Customer searchers for \"Gaming laptops\"(GameLaptops.feature:13)\r\n"
+            },
+            "name": "Customer searchers for \"Gaming laptops\"",
+            "keyword": "When ",
+            "line": 13,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gaming laptops",
+                  "offset": 24
+                }
+              ],
+              "location": "SearchFilterSteps.customer_searchers_for(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "name": "filter options are present",
             "keyword": "Then ",
-            "line": 8,
+            "line": 14,
             "match": {
               "location": "GamingPageSteps.filter_options_are_present(DataTable)"
             },
@@ -101,7 +169,7 @@
                   "filter_Schermgrootte",
                   "filter_Merk"
                 ],
-                "line": 9
+                "line": 15
               },
               {
                 "cells": [
@@ -109,7 +177,7 @@
                   "Schermgrootte",
                   "Merk"
                 ],
-                "line": 10
+                "line": 16
               }
             ]
           }
