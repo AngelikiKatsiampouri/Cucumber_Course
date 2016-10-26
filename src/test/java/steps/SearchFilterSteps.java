@@ -18,7 +18,8 @@ public void customer_searchers_for(String searchKeyWords) throws Throwable {
   searchInputElement.sendKeys(searchKeyWords);
   WebElement searchButtonElement=  SetupEnvironment.myDriver.findElement(Locators.findInputByAttribute("class","search-btn"));
   searchButtonElement.click();
-  //SetupEnvironment.myDriver.manage().timeouts(TimeSpan.FromSeconds(10));
+  Thread.sleep(2000);
+  
   
   
 }

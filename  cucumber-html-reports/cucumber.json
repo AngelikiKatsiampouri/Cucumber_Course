@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 950295951,
+              "duration": 1131134646,
               "status": "passed"
             },
             "match": {
@@ -28,7 +28,7 @@
         "before": [
           {
             "result": {
-              "duration": 4404844989,
+              "duration": 4403734916,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1720604645,
+              "duration": 3642799435,
               "status": "passed"
             },
             "name": "Customer navigates to main page",
@@ -55,9 +55,8 @@
           },
           {
             "result": {
-              "duration": 818560700,
-              "status": "failed",
-              "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat steps.SearchFilterSteps.customer_searchers_for(SearchFilterSteps.java:21)\r\n\tat ✽.When Customer searchers for \"Gaming laptops\"(GameLaptops.feature:6)\r\n"
+              "duration": 2821424143,
+              "status": "passed"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
             "keyword": "When ",
@@ -74,7 +73,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2364460372,
+              "status": "passed"
             },
             "name": "the website displays gaming laptops",
             "keyword": "Then ",
@@ -90,7 +90,7 @@
         "after": [
           {
             "result": {
-              "duration": 840191504,
+              "duration": 1017840795,
               "status": "passed"
             },
             "match": {
@@ -102,13 +102,13 @@
         "tags": [
           {
             "name": "@GameLaptop",
-            "line": 10
+            "line": 9
           }
         ],
         "before": [
           {
             "result": {
-              "duration": 3504050695,
+              "duration": 3442480289,
               "status": "passed"
             },
             "match": {
@@ -119,29 +119,28 @@
         "description": "",
         "name": "As customer I want to filter on gaming laptops",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 10,
         "steps": [
           {
             "result": {
-              "duration": 1444189323,
+              "duration": 3606051699,
               "status": "passed"
             },
             "name": "Customer navigates to main page",
             "keyword": "Given ",
-            "line": 12,
+            "line": 11,
             "match": {
               "location": "MainPageSteps.customer_navigates_to_main_page()"
             }
           },
           {
             "result": {
-              "duration": 904499733,
-              "status": "failed",
-              "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat steps.SearchFilterSteps.customer_searchers_for(SearchFilterSteps.java:21)\r\n\tat ✽.When Customer searchers for \"Gaming laptops\"(GameLaptops.feature:13)\r\n"
+              "duration": 2974123910,
+              "status": "passed"
             },
             "name": "Customer searchers for \"Gaming laptops\"",
             "keyword": "When ",
-            "line": 13,
+            "line": 12,
             "match": {
               "arguments": [
                 {
@@ -154,11 +153,12 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2393311570,
+              "status": "passed"
             },
             "name": "filter options are present",
             "keyword": "Then ",
-            "line": 14,
+            "line": 13,
             "match": {
               "location": "GamingPageSteps.filter_options_are_present(DataTable)"
             },
@@ -169,7 +169,7 @@
                   "filter_Schermgrootte",
                   "filter_Merk"
                 ],
-                "line": 15
+                "line": 14
               },
               {
                 "cells": [
@@ -177,7 +177,7 @@
                   "Schermgrootte",
                   "Merk"
                 ],
-                "line": 16
+                "line": 15
               }
             ]
           }

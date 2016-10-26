@@ -7,7 +7,7 @@ formatter.feature({
   "line": 1
 });
 formatter.before({
-  "duration": 4404844989,
+  "duration": 4403734916,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,7 +43,7 @@ formatter.match({
   "location": "MainPageSteps.customer_navigates_to_main_page()"
 });
 formatter.result({
-  "duration": 1720604645,
+  "duration": 3642799435,
   "status": "passed"
 });
 formatter.match({
@@ -56,22 +56,22 @@ formatter.match({
   "location": "SearchFilterSteps.customer_searchers_for(String)"
 });
 formatter.result({
-  "duration": 818560700,
-  "status": "failed",
-  "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat steps.SearchFilterSteps.customer_searchers_for(SearchFilterSteps.java:21)\r\n\tat ✽.When Customer searchers for \"Gaming laptops\"(GameLaptops.feature:6)\r\n"
+  "duration": 2821424143,
+  "status": "passed"
 });
 formatter.match({
   "location": "GamingPageSteps.the_website_displays_gaming_laptops()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2364460372,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 950295951,
+  "duration": 1131134646,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3504050695,
+  "duration": 3442480289,
   "status": "passed"
 });
 formatter.scenario({
@@ -79,29 +79,29 @@ formatter.scenario({
   "tags": [
     {
       "name": "@GameLaptop",
-      "line": 10
+      "line": 9
     }
   ],
   "description": "",
   "name": "As customer I want to filter on gaming laptops",
   "keyword": "Scenario",
-  "line": 11,
+  "line": 10,
   "type": "scenario"
 });
 formatter.step({
   "name": "Customer navigates to main page",
   "keyword": "Given ",
-  "line": 12
+  "line": 11
 });
 formatter.step({
   "name": "Customer searchers for \"Gaming laptops\"",
   "keyword": "When ",
-  "line": 13
+  "line": 12
 });
 formatter.step({
   "name": "filter options are present",
   "keyword": "Then ",
-  "line": 14,
+  "line": 13,
   "rows": [
     {
       "cells": [
@@ -109,7 +109,7 @@ formatter.step({
         "filter_Schermgrootte",
         "filter_Merk"
       ],
-      "line": 15
+      "line": 14
     },
     {
       "cells": [
@@ -117,7 +117,7 @@ formatter.step({
         "Schermgrootte",
         "Merk"
       ],
-      "line": 16
+      "line": 15
     }
   ]
 });
@@ -125,7 +125,7 @@ formatter.match({
   "location": "MainPageSteps.customer_navigates_to_main_page()"
 });
 formatter.result({
-  "duration": 1444189323,
+  "duration": 3606051699,
   "status": "passed"
 });
 formatter.match({
@@ -138,18 +138,18 @@ formatter.match({
   "location": "SearchFilterSteps.customer_searchers_for(String)"
 });
 formatter.result({
-  "duration": 904499733,
-  "status": "failed",
-  "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat steps.SearchFilterSteps.customer_searchers_for(SearchFilterSteps.java:21)\r\n\tat ✽.When Customer searchers for \"Gaming laptops\"(GameLaptops.feature:13)\r\n"
+  "duration": 2974123910,
+  "status": "passed"
 });
 formatter.match({
   "location": "GamingPageSteps.filter_options_are_present(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2393311570,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 840191504,
+  "duration": 1017840795,
   "status": "passed"
 });
 });

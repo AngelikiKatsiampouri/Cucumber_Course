@@ -22,6 +22,7 @@ public class GamingPageSteps {
 		for (WebElement webElement : GamingLaptopsWebElements) {
 			System.out.println(webElement.getText());
 		}
+		Thread.sleep(2000);
 	}
 	
 	
@@ -40,6 +41,7 @@ public class GamingPageSteps {
 		 
 	   }
 
-		
+	   Thread.sleep(2000);
 	}
+	
 }
