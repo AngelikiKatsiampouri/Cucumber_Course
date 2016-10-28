@@ -1,4 +1,4 @@
-Feature: As customer I want to use bol.com to select my new gaming laptop.
+Feature: Customer chooses gaming laptop from Bol.com website.
 
   @GameLaptop @Search
   Scenario: As customer I want to have a view of gaming laptops I can buy
